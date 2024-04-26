@@ -1,0 +1,64 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>plp Blog </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{% tailwind_css %}
+	</head>
+
+	<body class="bg-teal-50 font-serif leading-normal tracking-normal">
+        <header class='bg-teal-950 mb-20'>
+            <nav class='flex text-teal-400 justify-between container mx-auto'>
+                <div class='flex space-x-20 items-center'>
+                    <h1 class='bg-orange-400 text-4xl font-bold py-2 px-4 text-black rounded-md'>BlogPanion</h1>
+                    <ul class='flex items-center gap-6 text-2xl py-4'>
+                        <li><a class='hover:text-orange-400' href="{% url "home-page" %} ">Home</a></li>
+                        <li><a class='hover:text-orange-400' href=" {% url "about-page" %} ">About</a></li>
+                        <li><a class='hover:text-orange-400' href="#">Profile</a></li>
+                    </ul>
+                </div>
+                <ul class='flex items-center gap-6 text-2xl py-4'>
+                    <li><a class='hover:text-orange-400' href="#">SignUp</a></li>
+                    <li><a class='hover:text-orange-400' href="#">Login</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+		<section class='grid grid-cols-4'>
+            <div class='p-8 space-y-10 bg-teal-300'>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://plpacademy.powerlearnproject.org/">PlP Accedemy</a></div>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://docs.djangoproject.com/">Django Documentation</a></div>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://pythonprinciples.com/">python Tutorial</a></div>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://plpacademy.powerlearnproject.org/">PlP Accedemy</a></div>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://docs.djangoproject.com/">Django Documentation</a></div>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://pythonprinciples.com/">python Tutorial</a></div>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://plpacademy.powerlearnproject.org/">PlP Accedemy</a></div>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://docs.djangoproject.com/">Django Documentation</a></div>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://pythonprinciples.com/">python Tutorial</a></div>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://plpacademy.powerlearnproject.org/">PlP Accedemy</a></div>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://docs.djangoproject.com/">Django Documentation</a></div>
+                <div class=''>click here<a class='ml-4 text-blue-500 underline' href="https://pythonprinciples.com/">python Tutorial</a></div>
+                <article class='text-2xl'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officiis aliquid fuga iste laborum quo aperiam possimus consectetur, nobis ipsum illum nam mollitia, eius optio cupiditate deserunt quod maxime voluptate rerum ex hic saepe perspiciatis. Ex pariatur animi aut sapiente quo cupiditate minus, voluptatibus saepe est? Hic exercitationem quidem iure incidunt maxime ab consequuntur, assumenda debitis velit laborum ad voluptatum placeat animi corporis dolorum aut sapiente earum nostrum vel vitae quisquam perferendis? Excepturi tenetur cupiditate repudiandae dolore consequuntur, est quod, ea odit voluptas cumque quidem molestias, nesciunt minus iste nobis? Neque ducimus fuga accusantium culpa atque commodi deleniti, aperiam ut.
+                </article>
+                <article class='text-2xl'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officiis aliquid fuga iste laborum quo aperiam possimus consectetur, nobis ipsum illum nam mollitia, eius optio cupiditate deserunt quod maxime voluptate rerum ex hic saepe perspiciatis. Ex pariatur animi aut sapiente quo cupiditate minus, voluptatibus saepe est? Hic exercitationem quidem iure incidunt maxime ab consequuntur, assumenda debitis velit laborum ad voluptatum placeat animi corporis dolorum aut sapiente earum nostrum vel vitae quisquam perferendis? Excepturi tenetur cupiditate repudiandae dolore consequuntur, est quod, ea odit voluptas cumque quidem molestias, nesciunt minus iste nobis? Neque ducimus fuga accusantium culpa atque commodi deleniti, aperiam ut.
+                </article>
+            </div>
+            <div class='col-span-2'>
+                {% block content %}{% endblock content %}
+            </div>
+            <div class='bg-teal-300 p-4'>
+                <article class='text-2xl'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officiis aliquid fuga iste laborum quo aperiam possimus consectetur, nobis ipsum illum nam mollitia, eius optio cupiditate deserunt quod maxime voluptate rerum ex hic saepe perspiciatis. Ex pariatur animi aut sapiente quo cupiditate minus, voluptatibus saepe est? Hic exercitationem quidem iure incidunt maxime ab consequuntur, assumenda debitis velit laborum ad voluptatum placeat animi corporis dolorum aut sapiente earum nostrum vel vitae quisquam perferendis? Excepturi tenetur cupiditate repudiandae dolore consequuntur, est quod, ea odit voluptas cumque quidem molestias, nesciunt minus iste nobis? Neque ducimus fuga accusantium culpa atque commodi deleniti, aperiam ut.
+                </article>
+                <article class='text-2xl'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officiis aliquid fuga iste laborum quo aperiam possimus consectetur, nobis ipsum illum nam mollitia, eius optio cupiditate deserunt quod maxime voluptate rerum ex hic saepe perspiciatis. Ex pariatur animi aut sapiente quo cupiditate minus, voluptatibus saepe est? Hic exercitationem quidem iure incidunt maxime ab consequuntur, assumenda debitis velit laborum ad voluptatum placeat animi corporis dolorum aut sapiente earum nostrum vel vitae quisquam perferendis? Excepturi tenetur cupiditate repudiandae dolore consequuntur, est quod, ea odit voluptas cumque quidem molestias, nesciunt minus iste nobis? Neque ducimus fuga accusantium culpa atque commodi deleniti, aperiam ut.
+                </article>
+            </div>
+        </section>
+	</body>
+</html>

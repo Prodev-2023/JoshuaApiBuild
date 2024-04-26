@@ -1,0 +1,29 @@
+{% extends "blog/index.html" %}
+
+
+{% block content %}
+        <h1 class='text-4xl underline mb-20 text-center'>Actors and their archivement </h1>
+    <div >
+        <div class='grid grid-cols-2 gap-10 items-center'>
+            {% for dat in data2 %}
+                <div class='container mx-auto py-10 grid justify-start px-10'>
+                   <div class=' rounded-2xl bg-gray-200 w-80 '>
+                        <div class='w-11/12 m-auto py-4 h-auto mb-4'><img class='w-full h-auto' src="{{dat.image}}" alt=""></div>
+                       <div class='pl-4 pb-2'>
+                            <h2> {{dat.name}}</h2>
+                            <h2> {{dat.birth_year}}</h2>
+                            <h2> {{dat.nationality}}</h2>
+                            <h2> {{dat.known_for}}</h2>
+                            <h2> {{dat.awards}}</h2>
+                       </div>
+                    </div>
+                </div>
+                <div class='text-2xl px-4 mr-4'>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis voluptates quia, ad unde fuga minus eos voluptas vitae provident, nemo incidunt velit autem adipisci ipsum itaque consequatur ratione atque tempora ea pariatur animi dicta iste illo quidem. Cupiditate, consectetur. Esse magni dignissimos recusandae laboriosam impedit sit dolorum in fugit quam?</p>
+                </div> 
+            {% endfor %}
+        </div>
+            
+        </div>  
+    </div>
+{% endblock content %}
